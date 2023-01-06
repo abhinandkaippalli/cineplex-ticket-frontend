@@ -1,6 +1,6 @@
 class Model {
     constructor () {
-
+        this.profile = []
     }
     async getProfile() {
         const res = await fetch("http://localhost:3000/user")
