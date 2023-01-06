@@ -7,10 +7,10 @@ const controller = new Controller()
 
 controller.loadTicketFromBackend().then((result) => {
     render(result)
-}) 
-.catch((error) => {
-    console.log(error);
 })
+    .catch((error) => {
+        console.log(error);
+    })
 
 function render(ticketbooked) { //ticketbooked = result
     console.log(ticketbooked);
@@ -18,11 +18,11 @@ function render(ticketbooked) { //ticketbooked = result
     const nameRoot = document.getElementById('name')
     const emailRoot = document.getElementById('email')
     const numberRoot = document.getElementById('mob_number')
-    nameRoot.innerHTML=''
-    emailRoot.innerHTML=''
-    numberRoot.innerHTML=''
+    nameRoot.innerHTML = ''
+    emailRoot.innerHTML = ''
+    numberRoot.innerHTML = ''
     //rootDiv.innerHTML=""
-    for(let i=0; i<ticketbooked.length;i++) {
+    for (let i = 0; i < ticketbooked.length; i++) {
 
         const nameP = document.createElement('p')
         nameP.classList.add('form-control')
@@ -40,3 +40,7 @@ function render(ticketbooked) { //ticketbooked = result
         numberRoot.appendChild(mobP)
     }
 }
+
+
+
+
