@@ -1,15 +1,17 @@
 class Model {
-    constructor () {
-        this.profile = []
+    constructor() {
+        this.array = []
     }
-    async getProfile() {
-        const res = await fetch("http://localhost:3000/user")
-        const profile = await res.json()
-        console.log(profile);
-        return(profile)
-    }
-    async setProfile() {
-        const res = await fetch("http://localhost:3000/user", {
+
+    async getScreening() {
+        const res = await fetch("http://localhost:3000/screening")
+        const screening = await res.json()
+
+        return(screening)
+    } 
+
+    async setScreening() {
+        const res = await fetch("http://localhost:3000/screening", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

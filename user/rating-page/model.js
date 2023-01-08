@@ -1,15 +1,17 @@
 class Model {
-    constructor () {
-        this.profile = []
+    constructor() {
+        this.array=[]
     }
-    async getProfile() {
-        const res = await fetch("http://localhost:3000/user")
-        const profile = await res.json()
-        console.log(profile);
-        return(profile)
+
+    async getRating() {
+        const rating = await fetch("http://localhost:3000/rating")
+        const result = await rating.json()
+
+        return result
     }
-    async setProfile() {
-        const res = await fetch("http://localhost:3000/user", {
+
+    async setRating() {
+        const res = await fetch("http://localhost:3000/rating", {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
