@@ -11,4 +11,4 @@ form.addEventListener('submit', (e) => {
         controller.setArray(name.value, email.value, phone_number.value)
         form.reset();
         console.log(controller.getArray());
-})
+})  

@@ -37,7 +37,7 @@ function render() {
         button.addEventListener('click', (e) => {
             e.preventDefault()
             controller.bookSeats();
-            window.location.href = "../form-page/form-page.html";
+            window.location.href = "../../src/form-page.html"
         })
 
         rootDiv.appendChild(newSeat)

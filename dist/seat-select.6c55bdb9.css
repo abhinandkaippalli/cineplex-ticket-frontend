@@ -1,0 +1,42 @@
+#screen {
+  width: 800px;
+  height: 12px;
+  border: 1px solid gray;
+  margin: 50px auto 55px;
+}
+
+#root {
+  width: 1024px;
+  grid-gap: 12px;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+}
+
+.seat {
+  width: 24px;
+  height: 24px;
+  flex: wrap;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.seat:hover {
+  background-color: #ff0;
+}
+
+.booked {
+  background-color: #f17d7d;
+}
+
+.selected {
+  background-color: #76ff5b;
+}
+
+.book-button {
+  margin: 50px auto 0;
+  display: block;
+}
+
+/*# sourceMappingURL=seat-select.6c55bdb9.css.map */
